@@ -1,0 +1,25 @@
+{
+  "name": "gql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio"
+  },
+  "author": "Anna Jo",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.3.1",
+    "@prisma/client": "^4.9.0",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.9.0"
+  }
+}
