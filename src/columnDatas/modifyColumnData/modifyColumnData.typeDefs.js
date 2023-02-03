@@ -5,6 +5,6 @@ export default `#graphql
       error : String
 }
     type Mutation  {
-        modifyColumnData(id : Int!, value : String!) : modifyColumnDataResult
+        modifyColumnData(columnDataId : Int!, value : String!) : modifyColumnDataResult
     }
 `;
