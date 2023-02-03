@@ -6,8 +6,7 @@ const __dirname = path.resolve();
 import { loadFilesSync, loadFiles } from "@graphql-tools/load-files";
 import { mergeResolvers, mergeTypeDefs } from "@graphql-tools/merge";
 
-//const loadedTypes = loadFilesSync(`${__dirname}/**/*.typeDefs.js`);
-//const loadedResolvers = loadFilesSync(`${__dirname}/**/*.resolvers.js`);
+//https://github.com/ardatan/graphql-tools/issues/1750#issuecomment-655828240
 
 const loadedTypes = await loadFiles(`${__dirname}/**/*.typeDefs.js`, {
     ignoreIndex: true,
