@@ -3,11 +3,11 @@ import { protectedResolver } from '../../users/users.utils.js';
 
 export default {
     Mutation: {
-        modifyColumnData: protectedResolver(async function (_, { id, value }) {
+        modifyColumnData: protectedResolver(async function (_, { columnDataId, value }) {
             try {
                 const columnData = await client.columnData.update({
                     where: {
-                        id
+                        id : columnDataId
                     },
                     data: {
                         value
