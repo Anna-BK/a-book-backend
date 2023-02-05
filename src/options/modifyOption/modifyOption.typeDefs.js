@@ -1,10 +1,10 @@
 export default `#graphql
-    type modifyOptionResult {
+    type ModifyOptionResult {
         ok : Boolean!
         option : Option
         error : String
 }
     type Mutation  {
-        modifyOption(optionId : Int!, title : String!) : modifyOptionResult
+        modifyOption(optionId : Int!, title : String!) : ModifyOptionResult
     }
 `;
