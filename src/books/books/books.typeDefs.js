@@ -1,5 +1,10 @@
-export default `#graphql
-    type Query {
-     books : String
+export default `#graphql    
+  type BooksResult {
+    ok : Boolean!
+    books : [Book]
+    error : String
+  }
+  type Query {
+    books(offset : Int!, limit : Int!) : BooksResult
   }
 `;
